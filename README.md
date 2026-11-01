@@ -37,4 +37,19 @@ En diseño / arranque. La definición completa está en:
 
 ## Stack
 
-Node.js + TypeScript.
+- **Backend:** Python + FastAPI (API con documentación automática en `/docs`).
+- **Motor:** Python puro (`src/umbra/core/`), testeable por sí solo.
+- **Frontend:** React (más adelante).
+- HTTP con **httpx**, modelos con **Pydantic**, tests con **pytest**.
+
+## Cómo correr
+
+Detalle en [CONTRIBUTING.md](CONTRIBUTING.md). En corto:
+
+```bash
+py -m venv .venv
+.venv\Scripts\activate
+pip install -e ".[dev]"
+pytest
+uvicorn umbra.api.main:app --reload --app-dir src
+```
