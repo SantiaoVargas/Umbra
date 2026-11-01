@@ -87,7 +87,7 @@ Etiqueta **mejora**: mantenimiento, seguridad y calidad; no son funcionalidad nu
 
 | ID | Dominio | Prio | Mejora | Evidencia |
 |---|---|---|---|---|
-| M-001 | base | B | CI en GitHub Actions: `ruff check` + `pytest` en cada PR; proteger `main` con ese check | `pyproject.toml` ya trae ruff; no existe `.github/workflows/` (observado 2026-11-01) |
+| M-001 | base | B | ~~CI en GitHub Actions~~ **hecha** (commit `c94d6e7`, `.github/workflows/ci.yml`). Falta solo proteger `main` exigiendo ese check | observado 2026-11-01 |
 | M-002 | base | C | Definir y fijar en `ruff` el conjunto de reglas (hoy solo `line-length = 100`) | `pyproject.toml` `[tool.ruff]` |
 
 ## Hecho

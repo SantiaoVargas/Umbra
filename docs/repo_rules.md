@@ -41,7 +41,7 @@ uvicorn umbra.api.main:app --reload --app-dir src   # http://127.0.0.1:8000/docs
 
 ## Pendientes de confirmar
 
-- [ ] CI en GitHub Actions (ruff + pytest en cada PR) — mejora M-001.
+- [x] CI en GitHub Actions (ruff + pytest en cada PR) — M-001, commit `c94d6e7`.
 - [ ] Estrategia de merge a `main`: squash o merge normal.
 - [ ] Protección de la rama `main` en GitHub (PR obligatorio + 1 aprobación + tests verdes).
 - [ ] Formato de config de la allowlist (se decide en la spec de la historia 001).
