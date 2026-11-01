@@ -1,0 +1,3 @@
+# Umbra — instrucciones para la IA (Codex / Cursor)
+
+Mismo contenido que `CLAUDE.md`. Leer `docs/constitution.md`, luego `docs/flujo-de-trabajo-ia.md` y `docs/repo_rules.md`. Trabajo pendiente en `backlog.md` (respetar la columna Responsable). Conocimiento en `docs/architecture/`. Marcar observado / explicado por <persona> / hipótesis. Nunca en `main`: rama por slice. La IA no hace push, PR ni merge (commit solo si la persona lo pide). Sin dependencias nuevas sin aprobación. Sin secretos ni datos de objetivos reales en git; los tests nunca apuntan a hosts de terceros. La verdad vive en el repo (spec, fichas, `decisiones.md`), no en el chat. Al cerrar: ficha de dominio, decisiones, backlog y `docs/metricas-adopcion.md`.

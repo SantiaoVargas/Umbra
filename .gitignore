@@ -13,6 +13,13 @@ dist/
 # Node / React (más adelante)
 node_modules/
 
+# IA: preferencias personales (lo compartido va en CLAUDE.md / AGENTS.md)
+# (Se versiona .claude/skills/ aunque un gitignore global lo oculte)
+!.claude/
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/worktrees/
+
 # Editores / SO
 .vscode/
 .idea/

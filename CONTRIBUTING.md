@@ -34,11 +34,15 @@ pytest
 uvicorn umbra.api.main:app --reload --app-dir src
 ```
 
-## Flujo de Git (importante, somos dos)
+## Flujo de trabajo (somos dos, cada uno con su IA)
 
-1. Nunca trabajar directo sobre `main`.
-2. Una rama por tarea: `git checkout -b fase-1-allowlist`.
-3. Commits chicos y claros.
-4. Abrir Pull Request y que el otro lo revise antes de mergear.
-5. Como los módulos del motor son independientes, cada uno puede tomar una
-   pieza distinta sin conflictos.
+El detalle completo está en [docs/flujo-de-trabajo-ia.md](docs/flujo-de-trabajo-ia.md). En corto:
+
+1. Elegí una historia **libre** de [backlog.md](backlog.md) (sin Responsable, con dependencias `hecho`) y avisale al otro.
+2. Rama desde `main` actualizado: `git checkout -b feature/001-allowlist`. Nunca trabajar directo sobre `main`.
+3. Spec + tasks primero (`/umbra-slice` en Claude Code, o `AGENTS.md` en Codex/Cursor). Abrí un **PR en borrador**: la otra persona aprueba la spec antes de codear.
+4. Código con TDD; `pytest` y `ruff check .` en verde.
+5. Cierre documental en el mismo PR (ficha, decisiones, backlog, métricas). Plantilla de PR en `.github/`.
+6. La otra persona revisa y aprueba; merge a `main`. La IA nunca hace push/PR/merge.
+
+Preferencias personales de tu IA van en `CLAUDE.local.md` (no se sube). Todo lo que el equipo deba saber se escribe en el repo.
