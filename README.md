@@ -30,10 +30,13 @@ permiso es ilegal.
 
 ## Estado
 
-En diseño / arranque. La definición completa está en:
+En arranque (Fase 0 hecha). Trabajamos con SDD + IA; la definición y el estado están en:
 
 - [docs/DISENO-MOTOR.md](docs/DISENO-MOTOR.md) — arquitectura del motor.
-- [BACKLOG.md](BACKLOG.md) — tareas por fases.
+- [backlog.md](backlog.md) — historias, mejoras e ideas (qué sigue y quién lo tiene).
+- [docs/constitution.md](docs/constitution.md) — reglas innegociables del proyecto y del producto.
+- [docs/flujo-de-trabajo-ia.md](docs/flujo-de-trabajo-ia.md) — cómo trabajamos de a dos con IA (SDD + vertical slices).
+- [specs/](specs/) — una spec + tasks por historia.
 
 ## Stack
 

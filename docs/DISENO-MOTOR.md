@@ -3,7 +3,7 @@
 > Sub-proyecto 1 de Umbra: **el motor de escaneo**. Es un **core en Python puro**
 > (una librería que funciona y se testea sola) envuelto por una **API (FastAPI)**.
 > Más adelante, un **frontend en React** consume esa API. El dashboard, las
-> cuentas y el billing son _parking lot_ (ver [BACKLOG.md](../BACKLOG.md)).
+> cuentas y el billing son _parking lot_ (ver [backlog.md](../backlog.md)).
 
 ## Stack
 
