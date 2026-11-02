@@ -20,7 +20,7 @@ Fuente única de qué se construye, en qué orden y quién lo tiene. Cada histor
 | ID | Historia | Dominio | Fase | Prio | Depende de | Estado | Responsable | Spec |
 |---|---|---|---|---|---|---|---|---|
 | 000 | Como equipo quiero un esqueleto Python/FastAPI con el modelo `Finding` y sus tests para empezar sobre una base verde | base | 0 | A | — | **hecho** (commit `8502e40`) | Santiago | — |
-| 001 | Como dueño de un sistema quiero que Umbra solo escanee objetivos que autoricé explícitamente, para que un typo o un host ajeno nunca reciban tráfico | guardia | 1 | A | 000 | pendiente | — | `specs/001_allowlist/` (por crear) |
+| 001 | Como dueño de un sistema quiero que Umbra solo escanee objetivos que autoricé explícitamente, para que un typo o un host ajeno nunca reciban tráfico | guardia | 1 | A | 000 | en spec | Santiago | `specs/001_allowlist/` |
 | 002 | Como dev de módulos quiero un cliente HTTP observador que respete la allowlist, los redirects, el `429` y un límite de concurrencia, y registre la evidencia, para detectar sin dañar ni salirme de lo autorizado | cliente-http | 2 | A | 001 | pendiente | — | `specs/002_cliente_http/` (por crear) |
 | 003 | Como dev de módulos quiero una interfaz común de módulo y una app web vulnerable local, para escribir y probar módulos de forma segura y en paralelo | modulos | 3 | B | 000 | pendiente | — | `specs/003_interfaz_modulos/` (por crear) |
 | 004 | Como usuario quiero que Umbra detecte cabeceras de seguridad faltantes (HSTS, CSP, anti-clickjacking, etc.) con confianza alta, para corregir lo básico sin falsos positivos | modulos | 3 | A | 002, 003 | pendiente | — | `specs/004_header_checker/` (por crear) |
