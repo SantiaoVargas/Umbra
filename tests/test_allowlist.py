@@ -12,3 +12,8 @@ def test_objetivo_rechaza_host_con_esquema():
 def test_objetivo_rechaza_host_con_ruta_login():
     with pytest.raises(ValidationError):
         Objetivo(host="example.com/login")
+
+
+def test_objetivo_rechaza_host_puerto():
+    with pytest.raises(ValidationError):
+        Objetivo(host="example.com:8080")

@@ -11,4 +11,6 @@ class Objetivo(BaseModel):
             raise ValueError("(El host no debe incluir https://)")
         if "/" in v:
             raise ValueError("(El host no debe incluir rutas, ej: /login)")
+        if ":" in v:
+            raise ValueError("(El host no debe incluir puerto, ej: :8000)")
         return v
